@@ -1,0 +1,109 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #f0f0f0;
+      
+}
+
+.container{
+    position: fixed;
+    display: flex;
+    
+    width: 60%;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    opacity: 0.9;
+    border-radius: 100px;
+}
+
+
+.logout-button {
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+    width: 30%; 
+    cursor: pointer;
+    font-size: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.input-section,
+.display-section {
+    flex: 1;
+    padding: 20px;  
+}
+
+.input-section h2,
+.display-section h2 {
+    margin-top: 0;
+}
+
+input,
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.passport {
+    text-align: 250px;
+    
+}
+
+#passportImage {
+    max-width: 160px;
+    max-height: 250px;
+    margin-bottom: 10px;
+    
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF6B6B, #F06292, #BA68C8, #9575CD, #64B5F6, #4FC3F7, #4DD0E1, #4DB6AC);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+}
+
+button:hover {
+    background-position: 100% 100%;
+}
+
+
+.animated-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: gradientAnimation 10s linear infinite;
+  background: linear-gradient(to right, #7f7fd5 35%, #91eae4 69%);
+  background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

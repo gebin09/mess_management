@@ -1,0 +1,79 @@
+body {
+    ackground-image: url('background.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.centered-border {
+    width: 780px;
+    height: 580px;
+    border: 6px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 100px;
+    
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    
+}
+.custom-button {
+    width: 280px;
+    height: 120px;
+    padding: 40px 20px;
+    color: white;
+    font-size:35px;
+    border: black;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF6B6B, #F06292, #BA68C8, #9575CD, #64B5F6, #4FC3F7, #4DD0E1, #4DB6AC);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+}
+
+.custom-button:hover {
+    background-position: 100% 100%;
+}
+
+
+.animated-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: gradientAnimation 10s linear infinite;
+  background: linear-gradient(to bottom left, #66ff99 23%, #003366 100%);
+  background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+

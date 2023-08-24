@@ -1,0 +1,57 @@
+/* Reset default margin/padding and apply basic styling */
+body, div, img {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px; /* Add padding around the container */
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px; /* Create space between image containers */
+  
+}
+
+.col-md-3 {
+  flex: 0 10 25%; /* Each column takes up 25% of the row width */
+  padding: 10px; /* Add padding around each image container */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card {
+  border: 7px solid #ccc;
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8);
+  height: 100%; /* Make sure card fills the column height */
+  text-align: center;
+}
+
+.card img {
+  width: 90%;
+  height: 70%;
+  display: block; /* Remove any extra spacing beneath the image */
+  text-align: center;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  margin: 0;
+  text-align: center;
+}
+
+/* Optional: Add some responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 50%; /* On smaller screens, show two columns */
+  }
+}

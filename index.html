@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>Document</title>
+  <link rel="stylesheet" href="styles_login.css">
+</head>
+<body>
+   <form action="process_login.php" method="POST">
+  <div class="card">
+    <div class="form">
+      <h3>Login</h3>
+      <div class="input-field">
+          <i class="fa fa-envelope"></i>
+          <label for="username"><b>Username:</b></label>
+            <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-field">
+        <i class="fa fa-lock"></i>
+        <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" required>
+    </div>
+    <a href="#">Forgot password?</a>
+    <button type="submit">Login</button>
+    <p>Don't have an account? Contact the service provider</p>
+    </div>
+    <div class="image">
+      <div class="overlay">
+         <h3>Every New Student Is a<br>New Friend</h3>
+           <p>Let's Get Connected</p>
+      </div>
+    </div>
+  </div>
+<script src="login.js" defer></script>
+</form>
+</body>
+</html>
